@@ -13,9 +13,9 @@ def index():
 @app.route('/token')
 def token():
     # get credentials for environment variables
-    account_sid = 'ACe3c1d548801318109de50936544bee86'
-    api_key = 'SKbe3f360a2b152bb3fed9fc20a400f6ab'
-    api_secret = 'lg3vHXehZbJOh2PwJQsY7KAkWVQHXsS9'
+    account_sid = os.environ['TWILIO_ACCOUNT_SID']
+    api_key = os.environ['TWILIO_API_KEY']
+    api_secret = os.environ['TWILIO_API_SECRET']
     
     # Create an Access Token
     token = AccessToken(account_sid, api_key, api_secret)
@@ -25,7 +25,7 @@ def token():
     
     # Grant access to Conversations
     grant = ConversationsGrant()
-    grant.configuration_profile_sid = 'VS30dd0fbecf6725f558373c452dad52a8'
+    grant.configuration_profile_sid = os.environ['TWILIO_CONFIGURATION_SID']
     token.add_grant(grant)
 
     # Return token info as JSON
