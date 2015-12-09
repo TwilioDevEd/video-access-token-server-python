@@ -46,7 +46,7 @@ Now we should be all set! Run the application using the `python` command.
 python app.py
 ```
 
-Your application should now be running at http://localhost:3000. Send an invite to another user and start video chatting! If you just want to 
+Your application should now be running at http://localhost:5000. Send an invite to another user and start video chatting! If you just want to 
 test it you can invite your own identity to video chat with yourself. 
 
 ![screenshot of chat app](http://i.imgur.com/nVR70FQ.png)
