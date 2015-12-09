@@ -1,13 +1,13 @@
-# IP Messaging Quickstart for Python
+# Video Quickstart for Python
 
 This application should give you a ready-made starting point for writing your
-own messaging apps with Twilio IP Messaging. Before we begin, we need to collect
+own video chatting apps with Twilio Video. Before we begin, we need to collect
 all the credentials we need to run the application:
 
 Credential | Description
 ---------- | -----------
 Twilio Account SID | Your main Twilio account identifier - [find it on your dashboard](https://www.twilio.com/user/account).
-IP Messaging Service SID | Like a database ID for all your messaging app's data. Info on how to create one below.
+Twilio Video Configuration SID | Adds video capability to the access token -[generate one here](https://www.twilio.com/user/account/video/profiles)
 API Key | Used to authenticate - [generate one here](https://www.twilio.com/user/account/messaging/dev-tools/api-keys).
 API Secret | Used to authenticate - [just like the above, you'll get one here](https://www.twilio.com/user/account/messaging/dev-tools/api-keys).
 
@@ -65,10 +65,10 @@ Now we should be all set! Run the application using the `python` command.
 python app.py
 ```
 
-Your application should now be running at [http://localhost:5000](http://localhost:5000). 
-Open this page in a couple browsers or tabs, and start chatting!
+Your application should now be running at http://localhost:3000. Send an invite to another user and start video chatting! If you just want to 
+test it you can invite your own identity to video chat with yourself. 
 
-![screenshot of chat app](https://s3.amazonaws.com/howtodocs/quickstart/ipm-browser-quickstart.png)
+![screenshot of chat app](http://i.imgur.com/nVR70FQ.png)
 
 ## License
 
