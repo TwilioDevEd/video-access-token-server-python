@@ -6,10 +6,10 @@ all the credentials we need to run the application:
 
 Credential | Description
 ---------- | -----------
-Twilio Account SID | Your main Twilio account identifier - [find it on your dashboard](https://www.twilio.com/user/account/video).
-Twilio Video Configuration SID | Adds video capability to the access token - [generate one here](https://www.twilio.com/user/account/video/profiles)
-API Key | Used to authenticate - [generate one here](https://www.twilio.com/user/account/messaging/dev-tools/api-keys).
-API Secret | Used to authenticate - [just like the above, you'll get one here](https://www.twilio.com/user/account/messaging/dev-tools/api-keys).
+Twilio Account SID | Your main Twilio account identifier - [find it on your dashboard](https://www.twilio.com/console).
+Twilio Video Configuration SID | Adds video capability to the access token - [generate one here](https://www.twilio.com/console/video/profiles).
+API Key | Used to authenticate - [generate one here](https://www.twilio.com/console/dev-tools/api-keys).
+API Secret | Used to authenticate - [just like the above, you'll get one here](https://www.twilio.com/console/dev-tools/api-keys).
 
 ## A Note on API Keys
 
@@ -34,10 +34,18 @@ based systems:
 source .env
 ```
 
-Next, we need to install our depenedencies:
+Next, we need to set up your Python environment. Install `virtualenv` via `pip`:
 
 ```bash
-sudo pip install -r requirements.txt
+pip install virtualenv
+```
+
+Activate your virtual environment and install our dependencies:
+
+```bash
+virtualenv venv
+source venv/bin/activate
+pip install -r requirements.txt
 ```
 
 Now we should be all set! Run the application using the `python` command.
@@ -46,8 +54,8 @@ Now we should be all set! Run the application using the `python` command.
 python app.py
 ```
 
-Your application should now be running at http://localhost:5000. Send an invite 
-to another user in another browser tab or window to start video chatting!
+Your application should now be running at [http://localhost:5000](http://localhost:5000). Send an invite 
+to another user in another browser tab or window to start video chatting! When you finished, deactivate your virtual environment using `deactivate`.
 
 ![screenshot of chat app](http://i.imgur.com/nVR70FQ.png)
 
