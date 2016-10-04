@@ -55,7 +55,7 @@ python app.py
 ```
 
 Your application should now be running at [http://localhost:5000](http://localhost:5000). Send an invite 
-to another user in another browser tab or window to start video chatting! When you finished, deactivate your virtual environment using `deactivate`.
+to another user in another browser tab or window to start video chatting! When you're finished, deactivate your virtual environment using `deactivate`.
 
 ![screenshot of chat app](http://i.imgur.com/nVR70FQ.png)
 
