@@ -26,13 +26,7 @@ Begin by creating a configuration file for your application:
 cp .env.example .env
 ```
 
-Edit `.env` with the four configuration parameters we gathered from above. Export
-the configuration in this file as system environment variables like so on Unix
-based systems:
-
-```bash
-source .env
-```
+Edit `.env` with the four configuration parameters we gathered from above. 
 
 Next, we need to set up your Python environment. Install `virtualenv` via `pip`:
 

@@ -2,9 +2,11 @@ import os
 from flask import Flask, jsonify, request
 from faker import Factory
 from twilio.access_token import AccessToken, ConversationsGrant
+from dotenv import load_dotenv, find_dotenv
 
 app = Flask(__name__)
 fake = Factory.create()
+load_dotenv(find_dotenv())
 
 @app.route('/')
 def index():
