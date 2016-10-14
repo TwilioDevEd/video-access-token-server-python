@@ -29,14 +29,15 @@ Begin by creating a configuration file for your application:
 cp .env.example .env
 ```
 
-Edit `.env` with the four configuration parameters we gathered from above. Export
-the configuration in this file as system environment variables like so on Unix
-based systems:
+Edit `.env` with the four configuration parameters we gathered from above. 
+
+Next, we need to set up your Python environment. Install `virtualenv` via `pip`:
 
 ```bash
-source .env
+pip install virtualenv
 ```
 
+<<<<<<< HEAD
 ### Windows (PowerShell)
 
 Begin by creating a configuration file for your application:
@@ -60,9 +61,14 @@ your user account.
 ## All Platforms
 
 Next, we need to install our depenedencies:
+=======
+Activate your virtual environment and install our dependencies:
+>>>>>>> master
 
 ```bash
-sudo pip install -r requirements.txt
+virtualenv venv
+source venv/bin/activate
+pip install -r requirements.txt
 ```
 
 Now we should be all set! Run the application using the `python` command.
@@ -71,8 +77,8 @@ Now we should be all set! Run the application using the `python` command.
 python app.py
 ```
 
-Your application should now be running at http://localhost:5000. Send an invite 
-to another user in another browser tab or window to start video chatting!
+Your application should now be running at [http://localhost:5000](http://localhost:5000). Send an invite 
+to another user in another browser tab or window to start video chatting! When you're finished, deactivate your virtual environment using `deactivate`.
 
 ![screenshot of chat app](https://s3.amazonaws.com/com.twilio.prod.twilio-docs/images/video2.original.png)
 

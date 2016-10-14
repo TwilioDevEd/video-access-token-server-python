@@ -1,3 +1,4 @@
 Flask==0.10.1
 twilio==5.4.0
 fake-factory==0.5.3
+python-dotenv==0.6.0
