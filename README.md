@@ -61,9 +61,6 @@ your user account.
 ## All Platforms
 
 Next, we need to install our depenedencies:
-=======
-Activate your virtual environment and install our dependencies:
->>>>>>> master
 
 ```bash
 virtualenv venv
