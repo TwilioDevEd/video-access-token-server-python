@@ -37,7 +37,6 @@ Next, we need to set up your Python environment. Install `virtualenv` via `pip`:
 pip install virtualenv
 ```
 
-<<<<<<< HEAD
 ### Windows (PowerShell)
 
 Begin by creating a configuration file for your application:
