@@ -21,8 +21,6 @@ or possibly your `~/.bash_profile`.
 
 This application uses the lightweight [Flask Framework](http://flask.pocoo.org/). 
 
-### Mac & Linux
-
 Begin by creating a configuration file for your application:
 
 ```bash
@@ -36,28 +34,6 @@ Next, we need to set up your Python environment. Install `virtualenv` via `pip`:
 ```bash
 pip install virtualenv
 ```
-
-### Windows (PowerShell)
-
-Begin by creating a configuration file for your application:
-
-```powershell
-cp .env.example.ps1 .env.ps1
-```
-
-Edit `.env.ps1` with the four configuration parameters we gathered from above.
-"Dot-source" the file in PowerShell like so:
-
-```powershell
-. .\.env.ps1
-```
-
-This assumes you will run the application in the same PowerShell session. If not,
-edit the `.env.ps1` and uncomment the `[Environment]::SetEnvironmentVariable` calls.
-After re-running the script, the environment variables will be peramently set for
-your user account.
-
-## All Platforms
 
 Next, we need to install our depenedencies:
 
