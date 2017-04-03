@@ -1,3 +1,7 @@
+<a href="https://www.twilio.com">
+  <img src="https://static0.twilio.com/marketing/bundles/marketing/img/logos/wordmark-red.svg" alt="Twilio" width="250" />
+</a>
+
 # Video Quickstart for Python
 
 This application should give you a ready-made starting point for writing your
@@ -11,15 +15,10 @@ Account SID | Your primary Twilio account identifier - find this [in the console
 API Key | Used to authenticate - [generate one here](https://www.twilio.com/console/video/dev-tools/api-keys).
 API Secret | Used to authenticate - [just like the above, you'll get one here](https://www.twilio.com/console/video/dev-tools/api-keys).
 
-## A Note on API Keys
-
-When you generate an API key pair at the URLs above, your API Secret will only
-be shown once - make sure to save this in a secure location, 
-or possibly your `~/.bash_profile`.
 
 ## Setting Up The Python Application
 
-This application uses the lightweight [Flask Framework](http://flask.pocoo.org/). 
+This application uses the lightweight [Flask Framework](http://flask.pocoo.org/).
 
 Begin by creating a configuration file for your application:
 
@@ -27,7 +26,7 @@ Begin by creating a configuration file for your application:
 cp .env.example .env
 ```
 
-Edit `.env` with the four configuration parameters we gathered from above. 
+Edit `.env` with the four configuration parameters we gathered from above.
 
 Next, we need to set up your Python environment. Install `virtualenv` via `pip`:
 

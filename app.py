@@ -1,7 +1,8 @@
 import os
 from flask import Flask, jsonify, request
 from faker import Factory
-from twilio.access_token import AccessToken, VideoGrant
+from twilio.jwt.access_token import AccessToken
+from twilio.jwt.access_token.grants import VideoGrant
 from dotenv import load_dotenv, find_dotenv
 
 app = Flask(__name__)
@@ -18,13 +19,13 @@ def token():
     account_sid = os.environ['TWILIO_ACCOUNT_SID']
     api_key = os.environ['TWILIO_API_KEY']
     api_secret = os.environ['TWILIO_API_SECRET']
-    
+
     # Create an Access Token
     token = AccessToken(account_sid, api_key, api_secret)
 
     # Set the Identity of this token
     token.identity = fake.user_name()
-    
+
     # Grant access to Video
     grant = VideoGrant()
     grant.configuration_profile_sid = os.environ['TWILIO_CONFIGURATION_SID']
