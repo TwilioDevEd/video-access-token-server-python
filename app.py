@@ -29,4 +29,4 @@ def token():
     return token.to_jwt()
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=os.environ['DEBUG'])
