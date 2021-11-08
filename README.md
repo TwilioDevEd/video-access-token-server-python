@@ -31,7 +31,7 @@ cp .env.example .env
 ```
 
 Edit `.env` with the three configuration parameters we gathered from above. The application runs
-by default in `production` environment. Feel free to update `DEBUG` to False if needed.
+by default in `production` environment. Feel free to update `DEBUG` to True if needed.
 
 Next, we need to set up your Python environment. Install `virtualenv` via `pip`:
 
